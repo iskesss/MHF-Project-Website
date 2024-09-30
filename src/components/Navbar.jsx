@@ -15,18 +15,18 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="text-3xl font-bold text-[#00df9a]">RigConfig</h1>
+      <h1 className="text-3xl font-bold text-[#00df9a]">The JordFolio</h1>
       <ul className="hidden md:flex">
         <Link to="/dashboard" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
             <MdDashboard className="text-xl mr-2" />
-            <span>Dashboard</span>
+            <span>Home</span>
           </li>
         </Link>
         <Link to="/myparts" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
             <FiCpu className="text-xl mr-2" />
-            <span>My PC Parts</span>
+            <span>Who is this guy?</span>
           </li>
         </Link>
         <Link to="/suggestbuild" draggable="false">
@@ -53,7 +53,7 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-          RigConfig
+          The JordFolio
         </h1>
         <Link to="/dashboard" draggable="false">
           <li className="p-4 border-b border-gray-600">
