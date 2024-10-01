@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+Approx. Maternal Health Fund brand Colors...
+  ~Orange: #de4838
+  ~Blue: #71c2c3
+  ~Grey: #6a5d4e
+*/
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255, 0.87);

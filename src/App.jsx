@@ -1,21 +1,18 @@
-import { useState } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-import Dashboard from "./pages/Dashboard";
-import About from "./pages/About";
-import MyParts from "./pages/MyParts";
+import Home from "./pages/Home";
+import MyProject from "./pages/MyProject";
+import AboutMe from "./pages/AboutMe";
 import NoPage from "./pages/NoPage";
-import SuggestBuild from "./pages/SuggestBuild";
 
 function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route index element={<Dashboard />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/myparts" element={<MyParts />} />
-        <Route path="/suggestbuild" element={<SuggestBuild />} />
-        <Route path="/about" element={<About />} />
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/myproject" element={<MyProject />} />
+        <Route path="/aboutme" element={<AboutMe />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>

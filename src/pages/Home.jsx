@@ -1,16 +1,18 @@
-import React from "react";
 import Navbar from "../components/Navbar";
-import { CPUtable } from "../components/PartTables";
+import Footer from "../components/Footer";
 
-const MyParts = () => {
+const Home = () => {
   return (
     <>
       <Navbar />
       <div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 text-white">
-        <p className="text-lg">idk lol</p>
+        <div>
+          <p className="text-lg">You may be wondering where you are</p>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
 
-export default MyParts;
+export default Home;

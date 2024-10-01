@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { MdDashboard } from "react-icons/md";
-import { FiCpu } from "react-icons/fi";
+
 import { HiOutlineSparkles } from "react-icons/hi";
-import { IoMdInformationCircleOutline } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
+import { ImProfile } from "react-icons/im";
+import { GoTools } from "react-icons/go";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,30 +16,29 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="text-3xl font-bold text-[#00df9a]">The JordFolio</h1>
+      <div className="flex align-bottom">
+        <h1 className="text-3xl font-bold text-[#de4838]">
+          AI for Maternal Health
+        </h1>
+        <HiOutlineSparkles className="inline ml-1 size-6 text-[#de4838]" />
+      </div>
       <ul className="hidden md:flex">
-        <Link to="/dashboard" draggable="false">
-          <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
-            <MdDashboard className="text-xl mr-2" />
+        <Link to="/home" draggable="false">
+          <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
+            <FaHome className="text-xl mr-2" />
             <span>Home</span>
           </li>
         </Link>
-        <Link to="/myparts" draggable="false">
-          <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
-            <FiCpu className="text-xl mr-2" />
+        <Link to="/aboutme" draggable="false">
+          <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
+            <ImProfile className="text-xl mr-2" />
             <span>Who is this guy?</span>
           </li>
         </Link>
-        <Link to="/suggestbuild" draggable="false">
-          <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
-            <HiOutlineSparkles className="text-xl mr-2" />
-            <span>Suggest-a-Build</span>
-          </li>
-        </Link>
-        <Link to="/about" draggable="false">
-          <li className="flex items-center p-4 hover:bg-[#202020] hover:text-[#00df9a] transition duration-300 cursor-default rounded-xl">
-            <IoMdInformationCircleOutline className="text-xl mr-2" />
-            <span>About</span>
+        <Link to="/myproject" draggable="false">
+          <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
+            <GoTools className="text-xl mr-2" />
+            <span>What's he working on?</span>
           </li>
         </Link>
       </ul>
@@ -48,35 +48,29 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-          The JordFolio
+        <h1 className="w-full text-3xl font-bold text-[#de4838] m-4">
+          AI for Maternal Health
         </h1>
-        <Link to="/dashboard" draggable="false">
-          <li className="p-4 border-b border-gray-600">
-            <MdDashboard className="inline mr-2" />
-            <span>Dashboard</span>
+        <Link to="/home" draggable="false">
+          <li className="p-4 h-20 border-b border-gray-600 align-middle">
+            <FaHome className="inline mr-2 size-5" />
+            <span className="text-xl">Home</span>
           </li>
         </Link>
-        <Link to="/myparts" draggable="false">
-          <li className="p-4 border-b border-gray-600">
-            <FiCpu className="inline mr-2" />
-            <span>My PC Parts</span>
+        <Link to="/aboutme" draggable="false">
+          <li className="p-4 h-20 border-b border-gray-600">
+            <ImProfile className="inline mr-2 size-5" />
+            <span className="text-xl">Who is this guy?</span>
           </li>
         </Link>
-        <Link to="/suggestbuild" draggable="false">
-          <li className="p-4 border-b border-gray-600">
-            <HiOutlineSparkles className="inline mr-2 " />
-            <span>Suggest-a-Build</span>
-          </li>
-        </Link>
-        <Link to="/about" draggable="false">
-          <li className="p-4 border-b border-gray-600">
-            <IoMdInformationCircleOutline className="inline mr-2" />
-            <span>About</span>
+        <Link to="/myproject" draggable="false">
+          <li className="p-4 h-20 border-b border-gray-600">
+            <GoTools className="inline mr-2 size-5" />
+            <span className="text-xl">What's he working on?</span>
           </li>
         </Link>
       </ul>

@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const SuggestBuild = () => {
+const AboutMe = () => {
   return (
     <>
       <Navbar />
       <div className="flex justify-between items-center max-w-[1240px] mx-auto px-4 text-white">
-        <p className="text-lg">Suggest Builddd</p>
+        <p className="text-lg">I am Jordan!</p>
       </div>
     </>
   );
 };
 
-export default SuggestBuild;
+export default AboutMe;
