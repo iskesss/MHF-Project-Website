@@ -20,25 +20,25 @@ const Navbar = () => {
         <h1 className="text-3xl font-bold text-[#de4838]">
           AI for Maternal Health
         </h1>
-        <HiOutlineSparkles className="inline ml-1 size-6 text-[#de4838]" />
+        <HiOutlineSparkles className="inline ml-1 size-6 text-[#71c2c3]" />
       </div>
       <ul className="hidden md:flex">
         <Link to="/home" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
             <FaHome className="text-xl mr-2" />
-            <span>Home</span>
+            <span className="underline">Home</span>
           </li>
         </Link>
         <Link to="/aboutme" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
             <ImProfile className="text-xl mr-2" />
-            <span>Who is this guy?</span>
+            <span className="underline">About Me</span>
           </li>
         </Link>
         <Link to="/myproject" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#de4838] transition duration-300 cursor-default rounded-xl">
             <GoTools className="text-xl mr-2" />
-            <span>What's he working on?</span>
+            <span className="underline">About My Efforts</span>
           </li>
         </Link>
       </ul>
@@ -56,21 +56,21 @@ const Navbar = () => {
           AI for Maternal Health
         </h1>
         <Link to="/home" draggable="false">
-          <li className="p-4 h-20 border-b border-gray-600 align-middle">
+          <li className="p-4 h-16 border-b border-gray-600 align-middle">
             <FaHome className="inline mr-2 size-5" />
             <span className="text-xl">Home</span>
           </li>
         </Link>
         <Link to="/aboutme" draggable="false">
-          <li className="p-4 h-20 border-b border-gray-600">
+          <li className="p-4 h-16 border-b border-gray-600">
             <ImProfile className="inline mr-2 size-5" />
-            <span className="text-xl">Who is this guy?</span>
+            <span className="text-xl">About Me</span>
           </li>
         </Link>
         <Link to="/myproject" draggable="false">
-          <li className="p-4 h-20 border-b border-gray-600">
+          <li className="p-4 h-16 border-b border-gray-600">
             <GoTools className="inline mr-2 size-5" />
-            <span className="text-xl">What's he working on?</span>
+            <span className="text-xl">About My Efforts</span>
           </li>
         </Link>
       </ul>
