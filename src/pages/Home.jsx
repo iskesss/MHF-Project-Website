@@ -9,7 +9,7 @@ const Home = () => {
         <div>
           <p className="text-xl mb-3">
             Welcome 🤙 I'm{" "}
-            <a href="/#/aboutme" className="text-[#71c2c3]">
+            <a href="/#/aboutus" className="text-[#71c2c3]">
               Jordan Bouret
             </a>
             .
@@ -34,8 +34,8 @@ const Home = () => {
             <a href="/#/myproject" className="text-[#71c2c3]">
               here
             </a>{" "}
-            or about me{" "}
-            <a href="/#/aboutme" className="text-[#71c2c3]">
+            or about my team{" "}
+            <a href="/#/aboutus" className="text-[#71c2c3]">
               here
             </a>
             .
