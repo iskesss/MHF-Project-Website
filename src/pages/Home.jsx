@@ -67,7 +67,7 @@ const Home = () => {
           <h1 className="text-xl">What I'll Do</h1>
           <ul>
             <li>
-              - Acquire an open-source ultrasound image dataset for traning and
+              - Acquire an open-source ultrasound image dataset for training and
               testing of our Deep Learning model
             </li>
             <li>

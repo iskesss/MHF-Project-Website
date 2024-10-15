@@ -52,7 +52,7 @@ const MyProject = () => {
             </a>
             , and self-teaching wherever necessary. We're each preparing to
             present our understanding to Dr. Mahni on Friday, Oct 11th. For me
-            personally, the YouTube channel 3Blue1Brown has been intrumental in
+            personally, the YouTube channel 3Blue1Brown has been instrumental in
             offering an intuitive understanding of the mechanisms and
             mathematics which underlie Deep Learning. I'm thrilled to apply this
             knowledge to future endeavors!
