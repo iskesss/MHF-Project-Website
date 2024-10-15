@@ -29,13 +29,13 @@ const Navbar = () => {
             <span className="underline">Home</span>
           </li>
         </Link>
-        <Link to="/aboutus" draggable="false">
+        <Link to="/team" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#e37a59] transition duration-300 cursor-default rounded-xl">
             <ImProfile className="text-xl mr-2" />
-            <span className="underline">Meet the Team</span>
+            <span className="underline">Meet my Team</span>
           </li>
         </Link>
-        <Link to="/myproject" draggable="false">
+        <Link to="/project" draggable="false">
           <li className="flex items-center p-4 hover:bg-[#222222] hover:text-[#e37a59] transition duration-300 cursor-default rounded-xl">
             <GoTools className="text-xl mr-2" />
             <span className="underline">About Our Efforts</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-50"
+            ? "fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-20"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
@@ -61,13 +61,13 @@ const Navbar = () => {
             <span className="text-xl">Home</span>
           </li>
         </Link>
-        <Link to="/aboutus" draggable="false">
+        <Link to="/team" draggable="false">
           <li className="p-4 h-16 border-b border-gray-600">
             <ImProfile className="inline mr-2 size-5" />
-            <span className="text-xl">Meet the Team</span>
+            <span className="text-xl">Meet my Team</span>
           </li>
         </Link>
-        <Link to="/myproject" draggable="false">
+        <Link to="/project" draggable="false">
           <li className="p-4 h-16 border-b border-gray-600">
             <GoTools className="inline mr-2 size-5" />
             <span className="text-xl">About Our Efforts</span>

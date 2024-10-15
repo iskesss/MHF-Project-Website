@@ -1,8 +1,8 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import MyProject from "./pages/MyProject";
-import AboutUs from "./pages/AboutUs";
+import Project from "./pages/Project";
+import Team from "./pages/Team";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/myproject" element={<MyProject />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/team" element={<Team />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </HashRouter>

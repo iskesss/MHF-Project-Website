@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 
-const MyProject = () => {
+const Project = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -87,4 +87,4 @@ const MyProject = () => {
   );
 };
 
-export default MyProject;
+export default Project;
