@@ -1,0 +1,1 @@
+I built this site to share the impactful AI work I'm doing for the Maternal Health Foundation (MHF), an organization dedicated to preventing and treating childbirth-related injuries in underdeveloped regions.
