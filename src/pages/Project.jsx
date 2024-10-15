@@ -30,9 +30,7 @@ const Project = () => {
             </a>
             .
           </h1>
-          <h2 className="text-xl text-[#e37a59]">
-            —&gt; Phase 1, lead by David Oct 4 — Oct 11
-          </h2>
+          <h2 className="text-xl ">✔ Phase 1, lead by David Oct 4 — Oct 11</h2>
           <p className="italic text-gray-300">
             "Research. Brainstorm. Chart Course."
           </p>
@@ -56,6 +54,21 @@ const Project = () => {
             offering an intuitive understanding of the mechanisms and
             mathematics which underlie Deep Learning. I'm thrilled to apply this
             knowledge to future endeavors!
+          </p>
+          <h2 className="text-xl text-[#e37a59]">
+            -&gt; Phase 2, lead by Dewa: Oct 11 - Oct 16
+          </h2>
+          <p className="italic">"Select an Ultrasound Dataset"</p>
+          <p className="my-1 mx-5">
+            After thorough analysis of sections V-VII of the research paper, I
+            presented my findings to the group, and engaged in a lengthy
+            discussion of theirs. Although we're yet to decide which specific
+            ultrasound-related problem to solve, we've decided our technical
+            solution should involve an image segmentation model. This offers us
+            a vast range of problems to address without overcomplicating the
+            project. We plan to brainstorm again on the 16th, and each bring a
+            viable dataset, the best of which we'll actually use to train our
+            model.
             <span className="inline relative">
               {isVisible && (
                 <span className="absolute top-[-1] right-[-1] text-white">
@@ -64,11 +77,6 @@ const Project = () => {
               )}
             </span>
           </p>
-          <h2 className="text-xl text-gray-400">
-            Phase 2, lead by Dewa: Oct 11 - Oct 16
-          </h2>
-          <p className="italic text-gray-400">"Select an Ultrasound Dataset"</p>
-          <p className="my-1 mx-5"></p>
           <h2 className="text-xl text-gray-400">
             Phase 3, lead by Me: Oct 16 - Nov 10
           </h2>

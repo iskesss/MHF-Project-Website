@@ -17,8 +17,9 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
       <div className="flex align-bottom">
-        <h1 className="text-3xl font-bold text-[#e37a59]">
-          AI for Maternal Health
+        <h1 className="text-3xl font-bold text-[#e37a59]">AI for Ultrasound</h1>
+        <h1 className="hidden mdlg:inline text-3xl font-bold text-[#e37a59] ml-2">
+          Image Analysis
         </h1>
         <HiOutlineSparkles className="inline ml-1 size-6 text-[#71c2c3]" />
       </div>
@@ -53,7 +54,7 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#e37a59] m-4">
-          AI for Maternal Health
+          AI for Ultrasound
         </h1>
         <Link to="/home" draggable="false">
           <li className="p-4 h-16 border-b border-gray-600 align-middle">

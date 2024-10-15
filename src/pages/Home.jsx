@@ -35,7 +35,8 @@ const Home = () => {
           </h1>
 
           <p className="text-lg mb-3 pb-3 border-b border-gray-300">
-            I built this site to share the impactful AI work I'm doing for the{" "}
+            I built this site to share the impactful Deep Learning work I'm
+            doing for the{" "}
             <a
               href="https://maternalhealthfoundation.org/"
               className="text-[#71c2c3]"
