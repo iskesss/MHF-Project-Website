@@ -46,7 +46,8 @@ const Home = () => {
               Maternal Health Foundation
             </a>{" "}
             (MHF), an organization dedicated to preventing and treating
-            childbirth-related injuries in underdeveloped regions.
+            childbirth-related injuries in underdeveloped regions. Our world has
+            the technology to solve these problems, we just need to apply it.
           </p>
 
           <div className="flex">

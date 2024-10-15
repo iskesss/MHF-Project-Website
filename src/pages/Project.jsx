@@ -64,11 +64,11 @@ const Project = () => {
             presented my findings to the group, and engaged in a lengthy
             discussion of theirs. Although we're yet to decide which specific
             ultrasound-related problem to solve, we've decided our technical
-            solution should involve an image segmentation model. This offers us
-            a vast range of problems to address without overcomplicating the
-            project. We plan to brainstorm again on the 16th, and each bring a
-            viable dataset, the best of which we'll actually use to train our
-            model.
+            solution should involve an image segmentation model (see right image
+            below). This offers us a vast range of problems to address without
+            overcomplicating the project. We plan to brainstorm again on the
+            16th, and each bring a viable dataset, the best of which we'll
+            actually use to train our model.
             <span className="inline relative">
               {isVisible && (
                 <span className="absolute top-[-1] right-[-1] text-white">
@@ -76,6 +76,16 @@ const Project = () => {
                 </span>
               )}
             </span>
+            <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-4 items-center p-4">
+              <img
+                src="whiteboard.png"
+                className="w-[45%] h-auto rounded-lg shadow-md border border-gray-200"
+              ></img>
+              <img
+                src="segmentation.png"
+                className="w-[45%] h-auto rounded-lg shadow-md border border-gray-200"
+              ></img>
+            </div>
           </p>
           <h2 className="text-xl text-gray-400">
             Phase 3, lead by Me: Oct 16 - Nov 10
