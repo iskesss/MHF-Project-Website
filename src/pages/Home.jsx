@@ -22,12 +22,12 @@ const Home = () => {
             <span className="inline-block relative">
               <a
                 href="https://www.linkedin.com/in/jordan-bouret/"
-                className="text-[#71c2c3]"
+                className="text-[#e37a59]"
               >
                 Jordan Bouret
               </a>
               {isVisible && (
-                <span className="absolute top-0 right-[-1] text-[#71c2c3]">
+                <span className="absolute top-0 right-[-1] text-[#e37a59]">
                   _
                 </span>
               )}
