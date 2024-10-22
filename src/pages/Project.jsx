@@ -30,7 +30,9 @@ const Project = () => {
             </a>
             .
           </h1>
-          <h2 className="text-xl ">✔ Phase 1, lead by David Oct 4 — Oct 11</h2>
+          <h2 className="text-xl font-bold">
+            ✔ Phase 1, lead by David Oct 4 - Oct 11
+          </h2>
           <p className="italic text-gray-300">
             "Research. Brainstorm. Chart Course."
           </p>
@@ -55,8 +57,8 @@ const Project = () => {
             mathematics which underlie Deep Learning. I'm thrilled to apply this
             knowledge to future endeavors!
           </p>
-          <h2 className="text-xl text-[#e37a59]">
-            -&gt; Phase 2, lead by Dewa: Oct 11 - Oct 16
+          <h2 className="text-xl font-bold">
+            ✔ Phase 2, lead by Dewa: Oct 11 - Oct 16
           </h2>
           <p className="italic">"Select an Ultrasound Dataset"</p>
           <p className="my-1 mx-5">
@@ -69,13 +71,6 @@ const Project = () => {
             overcomplicating the project. We plan to brainstorm again on the
             16th, and each bring a viable dataset, the best of which we'll
             actually use to train our model.
-            <span className="inline relative">
-              {isVisible && (
-                <span className="absolute top-[-1] right-[-1] text-white">
-                  _
-                </span>
-              )}
-            </span>
             <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-4 items-center p-4">
               <img
                 src="whiteboard.png"
@@ -86,12 +81,68 @@ const Project = () => {
                 className="w-[45%] h-auto rounded-lg shadow-md border border-gray-200"
               ></img>
             </div>
+            <p>
+              UPDATE: During the Oct 16th meeting we decided to continue forward
+              with the{" "}
+              <a
+                className="inline text-[#71c2c3]"
+                href="https://paperswithcode.com/dataset/hc18"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HC18 Dataset
+              </a>{" "}
+              for reasons outlined in{" "}
+              <a
+                className="inline text-[#71c2c3]"
+                href="https://docs.google.com/document/d/1eNBgMBNvjiSuMoIiptBFiWZ2oree6l7EVZ7ez8o6N7o/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                this document
+              </a>{" "}
+              .
+            </p>
           </p>
-          <h2 className="text-xl text-gray-400">
-            Phase 3, lead by Me: Oct 16 - Nov 10
+          <h2 className="text-xl font-bold text-[#e37a59]">
+            -&gt; Phase 3, lead by Me: Oct 16 — Nov 10
           </h2>
-          <p className="italic text-gray-400">"Implement Solution"</p>
-          <p className="my-1 mx-5"></p>
+          <p className="italic">"Implement Solution"</p>
+          <p className="my-1 mx-5">
+            <p className="font-bold">
+              Action Items after Oct 16th Meeting with Dr. Mahni:
+            </p>
+            <ul>
+              <li>
+                - Prepare HC18 dataset for use - organize training/testing sets
+                with images and corresponding segmentation masks
+              </li>
+              <li>
+                - Research existing PyTorch implementations of U-Net or similar
+                architectures for brain MRI segmentation
+              </li>
+              <li>
+                - Draft email to Prof. Mahni, informing him of dataset choice
+                (HC18) and segmentation approach
+              </li>
+              <li>
+                - Search for additional brain MRI datasets compatible with
+                PyTorch for potential use in project
+              </li>
+              <li>
+                - We'll be meeting next Thursday (Oct 24th) to discuss coding
+                foundations and strategies for prototyping and implementing our
+                model with PyTorch
+                <span className="inline relative">
+                  {isVisible && (
+                    <span className="absolute top-[-1] right-[-1] text-white">
+                      _
+                    </span>
+                  )}
+                </span>
+              </li>
+            </ul>
+          </p>
           <h2 className="text-xl text-gray-400">
             Phase 4, lead by Dewa: Nov 10 - Nov 19
           </h2>

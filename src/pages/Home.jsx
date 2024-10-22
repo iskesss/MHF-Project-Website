@@ -71,6 +71,10 @@ const Home = () => {
                   </a>
                   , self-teaching wherever necessary
                 </li>
+                <li>
+                  - Acquired an open-source ultrasound image dataset for
+                  training and testing of our Deep Learning model
+                </li>
               </ul>
             </div>
 
@@ -78,16 +82,13 @@ const Home = () => {
               <h1 className="text-xl text-[#e37a59]">What I'll Do</h1>
               <ul>
                 <li>
-                  - Acquire an open-source ultrasound image dataset for training
-                  and testing of our Deep Learning model
-                </li>
-                <li>
                   - Orchestrate the research and selection of an ML tech stack
                   which best addresses our desired issue
                 </li>
                 <li>
-                  - Serve as repository/codebase admin during our development
-                  phase, managing version control & code integrity
+                  - Serve as repository/codebase admin during our prototyping
+                  and development phase, managing version control & code
+                  integrity
                 </li>
               </ul>
             </div>
