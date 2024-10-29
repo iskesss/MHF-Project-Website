@@ -109,9 +109,7 @@ const Project = () => {
           </h2>
           <p className="italic">"Implement Solution"</p>
           <p className="my-1 mx-5">
-            <p className="font-bold">
-              Action Items after Oct 16th Meeting with Dr. Mahni:
-            </p>
+            <p className="font-bold">Action Items after Oct 16th Meeting:</p>
             <ul>
               <li>
                 - Prepare HC18 dataset for use - organize training/testing sets
@@ -133,15 +131,49 @@ const Project = () => {
                 - We'll be meeting next Thursday (Oct 24th) to discuss coding
                 foundations and strategies for prototyping and implementing our
                 model with PyTorch
-                <span className="inline relative">
-                  {isVisible && (
-                    <span className="absolute top-[-1] right-[-1] text-white">
-                      _
-                    </span>
-                  )}
-                </span>
               </li>
             </ul>
+            <p className="pt-5">
+              <a
+                className="inline italic text-[#71c2c3]"
+                href="https://docs.google.com/document/d/1wSPy_4-SMZWxCUXtHaT_4B7Piav_lhtyml-MwT_Zzik/edit?tab=t.0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Here's our most recent group reflection on the project as a
+                whole
+              </a>
+              , which helped us clarify our goals and impact for the Maternal
+              Health Foundation. It strengthened our understanding of the social
+              significance of using AI in maternal healthcare, especially for
+              underserved communities, and highlighted the importance of our
+              partnership with Dr. Mahni. This process reinforced our commitment
+              to creating a solution with meaningful real-world benefits.
+            </p>
+            <p className="pt-5">
+              Below is our GitHub Kanban board and technical Gantt chart (as of
+              Oct 29th), not to be confused with the broader project Gantt chart
+              linked at the top of this page. We're currently comparing
+              different YOLO models (e.g. v8, v9, v10) in hopes to find an
+              effective balance between speed and accuracy.
+              <span className="inline relative">
+                {isVisible && (
+                  <span className="absolute top-[-1] right-[-1] text-white">
+                    _
+                  </span>
+                )}
+              </span>
+            </p>
+            <div className="flex flex-col lg:justify-center items-center p-4">
+              <img
+                src="kanban.png"
+                className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+              ></img>
+              <img
+                src="roadmap.png"
+                className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+              ></img>
+            </div>
           </p>
           <h2 className="text-xl text-gray-400">
             Phase 4, lead by Dewa: Nov 10 - Nov 19
