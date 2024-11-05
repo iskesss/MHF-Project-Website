@@ -175,6 +175,78 @@ const Project = () => {
               ></img>
             </div>
           </p>
+          <p className="font-bold">
+            Outline of Nov 5th Meeting With Dr. Mahni:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>Topics</li>
+            <ul className="ml-4 list-disc list-inside">
+              <li>Dataset Overview</li>
+              <ul className="ml-4 list-disc list-inside">
+                <li>HC-18 fetal brain ultrasound dataset</li>
+                <ul className="ml-4 list-inside">
+                  <li>
+                    - ~950 training images, 200 each for validation and testing
+                  </li>
+                  <li>- Images contain elliptical masks for brain regions</li>
+                  <li>
+                    - Team needs to research more details (e.g., trimester,
+                    imaging devices used, purpose of dataset)
+                  </li>
+                </ul>
+              </ul>
+              <li>Bounding Box Generation</li>
+              <ul className="ml-4 list-inside">
+                <li>
+                  - Jordan wrote code to convert elliptical masks to bounding
+                  boxes
+                </li>
+                <li>- Uses OpenCV for image processing</li>
+                <li>- Outputs coordinates associated with image filenames</li>
+              </ul>
+              <li>YOLO Implementation</li>
+              <ul className="ml-4 list-inside">
+                <li>- Using YOLO v11 via Ultralytics library</li>
+                <li>- David set up training on GPU (NVIDIA 3060 Ti)</li>
+                <li>- 10 epochs take &lt;10 minutes vs. 5 hours on MacBook</li>
+                <li>
+                  - Some confusion about role of Roboflow in current
+                  implementation
+                </li>
+              </ul>
+              <li>Training Results</li>
+              <ul className="ml-4 list-inside">
+                <li>
+                  - Model produces various metrics (precision, recall, mAP)
+                </li>
+                <li>
+                  - Team needs to better understand specific loss function and
+                  metrics used
+                </li>
+              </ul>
+              <li>Next Steps</li>
+              <ul className="ml-4 list-inside">
+                <li>- Clean up code and remove unused Roboflow components</li>
+                <li>- Implement proper testing on test dataset</li>
+                <li>
+                  - Research and understand metrics being used (precision,
+                  recall, mAP, loss function)
+                </li>
+                <li>- Compare YOLO results with Faster R-CNN implementation</li>
+                <li>- Investigate SAM for segmentation if time allows</li>
+              </ul>
+            </ul>
+          </ul>
+          <div className="flex flex-col lg:justify-center items-center p-4">
+            <img
+              src="TrainingBatch.png"
+              className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+            ></img>
+            <img
+              src="ValidationBatch1.png"
+              className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+            ></img>
+          </div>
           <h2 className="text-xl text-gray-400">
             Phase 4, lead by Dewa: Nov 10 - Nov 19
           </h2>
