@@ -193,22 +193,22 @@ const Project = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
             <img
               className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="public/BoundingBoxSlide.gif"
+              src="BoundingBoxSlide.gif"
               alt=""
             />
             <img
               className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="public/ValidateBatch.png"
+              src="ValidateBatch.png"
               alt=""
             />
             <img
               className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="public/TrainingResults.png"
+              src="TrainingResults.png"
               alt=""
             />
             <img
               className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="public/MoreMetrics.png"
+              src="MoreMetrics.png"
               alt=""
             />
           </div>
