@@ -94,7 +94,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="bg-gray-200 my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl">
           <div className="relative h-40">
             <img
               className="absolute h-full w-full object-cover"

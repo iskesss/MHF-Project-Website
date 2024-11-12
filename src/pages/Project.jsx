@@ -71,14 +71,14 @@ const Project = () => {
             overcomplicating the project. We plan to brainstorm again on the
             16th, and each bring a viable dataset, the best of which we'll
             actually use to train our model.
-            <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-4 items-center p-4">
+            <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center p-4">
               <img
                 src="whiteboard.png"
-                className="w-[45%] h-auto rounded-lg shadow-md border border-gray-200"
+                className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
               ></img>
               <img
                 src="segmentation.png"
-                className="w-[45%] h-auto rounded-lg shadow-md border border-gray-200"
+                className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
               ></img>
             </div>
             <p>
@@ -156,97 +156,122 @@ const Project = () => {
               linked at the top of this page. We're currently comparing
               different YOLO models (e.g. v8, v9, v10) in hopes to find an
               effective balance between speed and accuracy.
-              <span className="inline relative">
-                {isVisible && (
-                  <span className="absolute top-[-1] right-[-1] text-white">
-                    _
-                  </span>
-                )}
-              </span>
             </p>
             <div className="flex flex-col lg:justify-center items-center p-4">
               <img
                 src="kanban.png"
-                className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+                className="lg:w-[85%] h-auto my-1 rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
               ></img>
               <img
                 src="roadmap.png"
-                className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+                className="lg:w-[85%] h-auto my-1 rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
               ></img>
             </div>
           </p>
           <p className="font-bold">
-            Outline of Nov 5th Meeting With Dr. Mahni:
+            Key Takeaways from Nov 5th Meeting With Dr. Mahni:
           </p>
-          <ul className="list-disc list-inside">
-            <li>Topics</li>
-            <ul className="ml-4 list-disc list-inside">
-              <li>Dataset Overview</li>
-              <ul className="ml-4 list-disc list-inside">
-                <li>HC-18 fetal brain ultrasound dataset</li>
-                <ul className="ml-4 list-inside">
-                  <li>
-                    - ~950 training images, 200 each for validation and testing
-                  </li>
-                  <li>- Images contain elliptical masks for brain regions</li>
-                  <li>
-                    - Team needs to research more details (e.g., trimester,
-                    imaging devices used, purpose of dataset)
-                  </li>
-                </ul>
-              </ul>
-              <li>Bounding Box Generation</li>
-              <ul className="ml-4 list-inside">
-                <li>
-                  - Jordan wrote code to convert elliptical masks to bounding
-                  boxes
-                </li>
-                <li>- Uses OpenCV for image processing</li>
-                <li>- Outputs coordinates associated with image filenames</li>
-              </ul>
-              <li>YOLO Implementation</li>
-              <ul className="ml-4 list-inside">
-                <li>- Using YOLO v11 via Ultralytics library</li>
-                <li>- David set up training on GPU (NVIDIA 3060 Ti)</li>
-                <li>- 10 epochs take &lt;10 minutes vs. 5 hours on MacBook</li>
-                <li>
-                  - Some confusion about role of Roboflow in current
-                  implementation
-                </li>
-              </ul>
-              <li>Training Results</li>
-              <ul className="ml-4 list-inside">
-                <li>
-                  - Model produces various metrics (precision, recall, mAP)
-                </li>
-                <li>
-                  - Team needs to better understand specific loss function and
-                  metrics used
-                </li>
-              </ul>
-              <li>Next Steps</li>
-              <ul className="ml-4 list-inside">
-                <li>- Clean up code and remove unused Roboflow components</li>
-                <li>- Implement proper testing on test dataset</li>
-                <li>
-                  - Research and understand metrics being used (precision,
-                  recall, mAP, loss function)
-                </li>
-                <li>- Compare YOLO results with Faster R-CNN implementation</li>
-                <li>- Investigate SAM for segmentation if time allows</li>
-              </ul>
-            </ul>
+          <ul>
+            <li>
+              - Team has implemented YOLO v11 for bounding box detection on
+              HC-18 fetal brain ultrasound dataset
+            </li>
+            <li>
+              - Initial training completed, but testing and proper evaluation
+              still needed
+            </li>
+            <li>
+              - Advised to clean up code, fully understand YOLO implementation,
+              and compare with other models (e.g. Faster R-CNN, SAM)
+            </li>
+            <li>
+              - Emphasis on importance of understanding dataset details and
+              metrics for proper evaluation
+            </li>
           </ul>
-          <div className="flex flex-col lg:justify-center items-center p-4">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
             <img
-              src="TrainingBatch.png"
-              className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              src="public/BoundingBoxSlide.gif"
+              alt=""
+            />
+            <img
+              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              src="public/ValidateBatch.png"
+              alt=""
+            />
+            <img
+              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              src="public/TrainingResults.png"
+              alt=""
+            />
+            <img
+              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              src="public/MoreMetrics.png"
+              alt=""
+            />
+          </div>
+          <p className="font-bold">Key Takeaways from Nov 11th Meeting:</p>
+          <ul>
+            <li>
+              - David made progress implementing SAM (Segment Anything Model)
+              for brain segmentation, achieving zero-shot results (see images
+              below)
+            </li>
+            <li>
+              - Team faced challenges with qualitatively assessing SAM's
+              performance on fetal brain ultrasounds due to a lack of
+              professional Medical experience
+            </li>
+            <li>
+              - Jordan researched the{" "}
+              <a
+                className="inline text-[#71c2c3]"
+                href="https://www.youtube.com/watch?v=KKwAIzhnpCA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                visual differences between normal and abnormal fetal brains
+              </a>
+            </li>
+            <li>
+              - Key insight: Shockingly small differences (e.g., 15 vs. 10 mm)
+              between brain subsections can be critical in predicting fetal
+              malformations
+            </li>
+            <li>
+              - Reflection essay was completed and reviewed, ready for
+              submission
+            </li>
+            <li>
+              - Team discussed potential next steps, including reaching out to
+              Dr. Mahni for further guidance and advice
+            </li>
+          </ul>
+
+          <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center p-4">
+            <img
+              src="SAM_result_1.jpg"
+              className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
             ></img>
             <img
-              src="ValidationBatch1.png"
-              className="w-[85%] h-auto m-1 rounded-lg shadow-md border border-gray-200"
+              src="SAM_result_2.jpg"
+              className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
             ></img>
           </div>
+          <p>
+            Above: SAM's zero-shot performance for fetal brain segmentation.
+            Promising considering that we're yet to fine tune!
+            <span className="inline relative">
+              {isVisible && (
+                <span className="absolute top-[-1] right-[-1] text-white">
+                  _
+                </span>
+              )}
+            </span>
+          </p>
+
           <h2 className="text-xl text-gray-400">
             Phase 4, lead by Dewa: Nov 10 - Nov 19
           </h2>
