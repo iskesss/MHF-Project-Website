@@ -18,7 +18,7 @@ const Project = () => {
       <Navbar />
       <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4 text-gray-200">
         <div>
-          <h1 className="text-2xl mb-3 italic">
+          <h1 className="text-xl mb-3 italic">
             The timeline below has been determined by{" "}
             <a
               className="inline text-[#71c2c3]"
@@ -30,13 +30,11 @@ const Project = () => {
             </a>
             .
           </h1>
-          <h2 className="text-xl font-bold">
-            ✔ Phase 1, lead by David Oct 4 - Oct 11
-          </h2>
-          <p className="italic text-gray-300">
-            "Research. Brainstorm. Chart Course."
-          </p>
-          <p className="my-1 mx-5">
+          <h1 className="text-2xl font-bold inline">
+            ✔ Research. Brainstorm. Chart Course.{" "}
+          </h1>
+          <p className="text-2xl sm:inline">(Oct 4 - Oct 11) (Lead by David)</p>
+          <p className="mb-7 mt-1 mx-5">
             During our meeting with Dr. Mahni, we chose a general direction to
             pursue: Deep Learning for Ultrasound Imaging. This requires ML
             knowledge that neither me, David, nor Dewa currently possess, and so
@@ -57,11 +55,14 @@ const Project = () => {
             mathematics which underlie Deep Learning. I'm thrilled to apply this
             knowledge to future endeavors!
           </p>
-          <h2 className="text-xl font-bold">
-            ✔ Phase 2, lead by Dewa: Oct 11 - Oct 16
-          </h2>
-          <p className="italic">"Select an Ultrasound Dataset"</p>
-          <p className="my-1 mx-5">
+          <h1 className="text-2xl font-bold inline">
+            ✔ Select an Ultrasound Dataset.
+          </h1>
+          <p className="text-2xl sm:inline">
+            {" "}
+            (Oct 11 - Oct 16) (Lead by Dewa)
+          </p>
+          <p className="mb-7 mt-1 mx-5">
             After thorough analysis of sections V-VII of the research paper, I
             presented my findings to the group, and engaged in a lengthy
             discussion of theirs. Although we're yet to decide which specific
@@ -104,11 +105,12 @@ const Project = () => {
               .
             </p>
           </p>
-          <h2 className="text-xl font-bold text-[#e37a59]">
-            -&gt; Phase 3, lead by Me: Oct 16 — Nov 10
-          </h2>
-          <p className="italic">"Implement Solution"</p>
-          <p className="my-1 mx-5">
+          <h1 className="text-2xl font-bold inline">✔ Implement Solution.</h1>
+          <p className="text-2xl sm:inline">
+            {" "}
+            (Oct 16 - Nov 10) (Lead by Jordan)
+          </p>
+          <p className="mb-7 mt-1 mx-5">
             <p className="font-bold">Action Items after Oct 16th Meeting:</p>
             <ul>
               <li>
@@ -167,116 +169,118 @@ const Project = () => {
                 className="lg:w-[85%] h-auto my-1 rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
               ></img>
             </div>
-          </p>
-          <p className="font-bold">
-            Key Takeaways from Nov 5th Meeting With Dr. Mahni:
-          </p>
-          <ul>
-            <li>
-              - Team has implemented YOLO v11 for bounding box detection on
-              HC-18 fetal brain ultrasound dataset
-            </li>
-            <li>
-              - Initial training completed, but testing and proper evaluation
-              still needed
-            </li>
-            <li>
-              - Advised to clean up code, fully understand YOLO implementation,
-              and compare with other models (e.g. Faster R-CNN, SAM)
-            </li>
-            <li>
-              - Emphasis on importance of understanding dataset details and
-              metrics for proper evaluation
-            </li>
-          </ul>
+            <p className="font-bold">
+              Key Takeaways from Nov 5th Meeting With Dr. Mahni:
+            </p>
+            <ul>
+              <li>
+                - Team has implemented YOLO v11 for bounding box detection on
+                HC-18 fetal brain ultrasound dataset
+              </li>
+              <li>
+                - Initial training completed, but testing and proper evaluation
+                still needed
+              </li>
+              <li>
+                - Advised to clean up code, fully understand YOLO
+                implementation, and compare with other models (e.g. Faster
+                R-CNN, SAM)
+              </li>
+              <li>
+                - Emphasis on importance of understanding dataset details and
+                metrics for proper evaluation
+              </li>
+            </ul>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
-            <img
-              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="BoundingBoxSlide.gif"
-              alt=""
-            />
-            <img
-              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="ValidateBatch.png"
-              alt=""
-            />
-            <img
-              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="TrainingResults.png"
-              alt=""
-            />
-            <img
-              className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-              src="MoreMetrics.png"
-              alt=""
-            />
-          </div>
-          <p className="font-bold">Key Takeaways from Nov 11th Meeting:</p>
-          <ul>
-            <li>
-              - David made progress implementing SAM (Segment Anything Model)
-              for brain segmentation, achieving zero-shot results (see images
-              below)
-            </li>
-            <li>
-              - Team faced challenges with qualitatively assessing SAM's
-              performance on fetal brain ultrasounds due to a lack of
-              professional Medical experience
-            </li>
-            <li>
-              - Jordan researched the{" "}
-              <a
-                className="inline text-[#71c2c3]"
-                href="https://www.youtube.com/watch?v=KKwAIzhnpCA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                visual differences between normal and abnormal fetal brains
-              </a>
-            </li>
-            <li>
-              - Key insight: Shockingly small differences (e.g., 15 vs. 10 mm)
-              between brain subsections can be critical in predicting fetal
-              malformations
-            </li>
-            <li>
-              - Reflection essay was completed and reviewed, ready for
-              submission
-            </li>
-            <li>
-              - Team discussed potential next steps, including reaching out to
-              Dr. Mahni for further guidance and advice
-            </li>
-          </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="BoundingBoxSlide.gif"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="ValidateBatch.png"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="TrainingResults.png"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="MoreMetrics.png"
+                alt=""
+              />
+            </div>
+            <p className="font-bold">Key Takeaways from Nov 11th Meeting:</p>
+            <ul>
+              <li>
+                - David made progress implementing SAM (Segment Anything Model)
+                for brain segmentation, achieving zero-shot results (see images
+                below)
+              </li>
+              <li>
+                - Team faced challenges with qualitatively assessing SAM's
+                performance on fetal brain ultrasounds due to a lack of
+                professional Medical experience
+              </li>
+              <li>
+                - Jordan researched the{" "}
+                <a
+                  className="inline text-[#71c2c3]"
+                  href="https://www.youtube.com/watch?v=KKwAIzhnpCA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  visual differences between normal and abnormal fetal brains
+                </a>
+              </li>
+              <li>
+                - Key insight: Shockingly small differences (e.g., 15 vs. 10 mm)
+                between brain subsections can be critical in predicting fetal
+                malformations
+              </li>
+              <li>
+                - Reflection essay was completed and reviewed, ready for
+                submission
+              </li>
+              <li>
+                - Team discussed potential next steps, including reaching out to
+                Dr. Mahni for further guidance and advice
+              </li>
+            </ul>
 
-          <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center p-4">
-            <img
-              src="SAM_result_1.jpg"
-              className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-            ></img>
-            <img
-              src="SAM_result_2.jpg"
-              className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
-            ></img>
-          </div>
-          <p>
-            Above: SAM's zero-shot performance for fetal brain segmentation.
-            Promising considering that we're yet to fine tune!
+            <div className="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center p-4">
+              <img
+                src="SAM_result_1.jpg"
+                className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              ></img>
+              <img
+                src="SAM_result_2.jpg"
+                className="md:max-w-[45%] sm:w-[100%] h-auto my-1 rounded-lg shadow-md border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+              ></img>
+            </div>
+            <p>
+              Above: SAM's zero-shot performance for fetal brain segmentation.
+              Promising considering that we're yet to fine tune!
+            </p>
+          </p>
+
+          <h1 className="text-2xl font-bold inline text-[#e37a59]">
+            Finalize the Product & Share Findings.
             <span className="inline relative">
               {isVisible && (
-                <span className="absolute top-[-1] right-[-1] text-white">
+                <span className="absolute top-[-1] right-[-1] text-[#e37a59]">
                   _
                 </span>
               )}
             </span>
-          </p>
-
-          <h2 className="text-xl text-gray-400">
-            Phase 4, lead by Dewa: Nov 10 - Nov 19
-          </h2>
-          <p className="italic text-gray-400">
-            "Finalize the Product & Share Findings"
+          </h1>
+          <p className="text-2xl sm:inline">
+            {" "}
+            (Nov 10 - Nov 19) (Lead by Dewa)
           </p>
           <p className="my-1 mx-5"></p>
         </div>
