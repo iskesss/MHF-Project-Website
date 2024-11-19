@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import FloatingShape from "../components/FloatingShape";
 import { useState, useEffect } from "react";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col lg:flex-row max-w-[1200px] mx-auto px-4 text-gray-200">
+      <div className="flex flex-col lg:flex-row max-w-[1200px] mx-auto px-4 text-gray-200 relative">
         <div className="lg:m-4">
           <h1 className="text-xl mb-3">
             Welcome 🤙 I'm{" "}
@@ -178,6 +179,30 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <FloatingShape
+          shape="rounded-md"
+          color="bg-[#0081FB]"
+          size="w-40 h-10"
+          animationDelay={1}
+          text="☆ Meta SAM"
+          className="outline absolute lg:right-32 lg:bottom-0 z-10"
+        />
+        <FloatingShape
+          shape="rounded-lg"
+          color="bg-[#e37a59]"
+          size="w-40 h-10"
+          text="☆ Pytorch"
+          animationDelay={2}
+          className="outline absolute lg:right-64 lg:bottom-0"
+        />
+        <FloatingShape
+          shape="rounded-lg"
+          color="bg-green-600"
+          size="w-40 h-10"
+          text="☆ YOLOv11"
+          animationDelay={3}
+          className="outline absolute lg:right-0 lg:bottom-0"
+        />
       </div>
 
       <Footer />
