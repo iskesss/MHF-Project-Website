@@ -17,16 +17,22 @@ Approx. Maternal Health Fund brand Colors...
 
 @keyframes floating {
   0% {
-    transform: translateY(0);
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(3px, -10px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translate(0, -20px);
+  }
+  75% {
+    transform: translate(-3px, -10px);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
 }
 
 .animate-floating {
-  animation: floating 5s ease-in-out infinite;
+  animation: floating 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }

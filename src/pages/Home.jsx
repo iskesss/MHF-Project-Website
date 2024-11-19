@@ -185,7 +185,7 @@ const Home = () => {
           size="w-40 h-10"
           animationDelay={1}
           text="☆ Meta SAM"
-          className="outline absolute lg:right-32 lg:bottom-0 z-10"
+          className="z-10 outline absolute lg:bottom-0 lg:right-32 bottom-80 right-auto"
         />
         <FloatingShape
           shape="rounded-lg"
@@ -193,7 +193,7 @@ const Home = () => {
           size="w-40 h-10"
           text="☆ Pytorch"
           animationDelay={2}
-          className="outline absolute lg:right-64 lg:bottom-0"
+          className="outline absolute lg:bottom-0 lg:right-64 bottom-64 right-44"
         />
         <FloatingShape
           shape="rounded-lg"
@@ -201,7 +201,7 @@ const Home = () => {
           size="w-40 h-10"
           text="☆ YOLOv11"
           animationDelay={3}
-          className="outline absolute lg:right-0 lg:bottom-0"
+          className="outline absolute lg:bottom-0 lg:right-0 bottom-72 right-5"
         />
       </div>
 
