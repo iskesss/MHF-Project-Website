@@ -51,47 +51,42 @@ const Home = () => {
           </p>
 
           <div className="flex">
-            <div className="w-1/2 pr-3">
-              <h1 className="text-xl text-[#e37a59]">What I've Done</h1>
-              <ul className>
-                <li>
-                  - Self-taught the fundamentals of Deep Learning (shoutout
-                  3Blue1Brown)
-                </li>
-                <li>
-                  - Studied{" "}
-                  <a
-                    className="inline italic text-[#71c2c3]"
-                    href="https://arxiv.org/abs/2201.12260"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    A Review on Deep-Learning Algorithms for Fetal
-                    Ultrasound-Image Analysis
-                  </a>
-                  , self-teaching wherever necessary
-                </li>
-                <li>
-                  - Acquired an open-source ultrasound image dataset for
-                  training and testing of our Deep Learning model
-                </li>
-              </ul>
-            </div>
-
-            <div className="w-1/2 pl-">
-              <h1 className="text-xl text-[#e37a59]">What I'll Do</h1>
-              <ul>
-                <li>
-                  - Orchestrate the research and selection of an ML tech stack
-                  which best addresses our desired issue
-                </li>
-                <li>
-                  - Serve as repository/codebase admin during our prototyping
-                  and development phase, managing version control & code
-                  integrity
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <p className="text-xl mb-2 text-[#e37a59]">
+                My Efforts in Contributing to this Project
+              </p>
+              <li className="mb-1">
+                - Self-taught the fundamentals of Deep Learning (shoutout
+                3Blue1Brown)
+              </li>
+              <li className="mb-1">
+                - Studied{" "}
+                <a
+                  className="inline italic text-[#71c2c3]"
+                  href="https://arxiv.org/abs/2201.12260"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  A Review on Deep-Learning Algorithms for Fetal
+                  Ultrasound-Image Analysis
+                </a>
+                , self-teaching wherever necessary
+              </li>
+              <li className="mb-1">
+                - Acquired an open-source ultrasound image dataset for training
+                and testing of our Deep Learning model
+              </li>
+              <li className="mb-1">
+                - Orchestrated the research and selection of an ML tech stack
+                which best suited our application (PyTorch, Roboflow,
+                Ultralytics YOLOv11, SAM)
+              </li>
+              <li>
+                - Served as project manager and repository/codebase admin during
+                our prototyping and development phase, managing version control
+                & code integrity
+              </li>
+            </ul>
           </div>
         </div>
         <div className="bg-gray-200 my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl">
@@ -184,6 +179,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );

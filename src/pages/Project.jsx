@@ -18,7 +18,7 @@ const Project = () => {
       <Navbar />
       <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4 text-gray-200">
         <div>
-          <h1 className="text-xl mb-3 italic">
+          <h1 className="text-md mb-3 italic">
             The timeline below has been determined by{" "}
             <a
               className="inline text-[#71c2c3]"
