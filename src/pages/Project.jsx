@@ -267,22 +267,54 @@ const Project = () => {
               Promising considering that we're yet to fine tune!
             </p>
           </p>
-
           <h1 className="text-2xl font-bold inline text-[#e37a59]">
             Finalize the Product & Share Findings.
-            <span className="inline relative">
-              {isVisible && (
-                <span className="absolute top-[-1] right-[-1] text-[#e37a59]">
-                  _
-                </span>
-              )}
-            </span>
           </h1>
           <p className="text-2xl sm:inline">
             {" "}
             (Nov 10 - Nov 19) (Lead by Dewa)
           </p>
-          <p className="my-1 mx-5"></p>
+          <p className="my-1 mx-5">
+            <p className="font-bold">
+              The Abstract of our{" "}
+              <a
+                className="inline text-[#71c2c3]"
+                href="https://docs.google.com/document/d/1qapBjL_38qbFmfcemdkD9_UDPC-8jQzP_NSfXVGfY9c/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Final Project Report
+              </a>
+              :
+            </p>
+            <p className="italic inline">
+              The Maternal Health Foundation (MHF) has collaborated with
+              computer science students at Santa Clara University to address
+              maternal healthcare gaps in underserved communities. Us students
+              (Dewa, Jordan, David), aimed to implement a deep learning model
+              (YOLOv11) for the digital analysis of fetal brain ultrasound
+              images, improving detection accuracy and (hopefully) supporting
+              maternal health through early identification of potential
+              complications. Our team reviewed comprehensive research on various
+              deep learning techniques, ultimately selecting and fine-tuning a
+              YOLOv11 model trained on a dataset derived from the HC18 Challenge
+              and prepared using Roboflow. The dataset, consisting of 998
+              images, was split into training, validation, and testing sets. We
+              used an Nvidia RTX 3060ti GPU and the PyTorch framework for
+              effective and efficient training. Our results confirmed the
+              feasibility of using deep learning for precise fetal brain
+              detection, although further progress would require familiarity
+              with medical knowledge beyond the scope and timeframe of our
+              project.
+            </p>
+            <span className="inline relative">
+              {isVisible && (
+                <span className="absolute top-[-1] right-[-1] text-white">
+                  _
+                </span>
+              )}
+            </span>
+          </p>
         </div>
       </div>
     </>
