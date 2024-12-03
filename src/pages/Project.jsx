@@ -275,7 +275,7 @@ const Project = () => {
             (Nov 10 - Nov 19) (Lead by Dewa)
           </p>
           <p className="my-1 mx-5">
-            <p className="font-bold">
+            <h2 className="font-bold">
               The Abstract of our{" "}
               <a
                 className="inline text-[#71c2c3]"
@@ -286,8 +286,8 @@ const Project = () => {
                 Final Project Report
               </a>
               :
-            </p>
-            <p className="italic inline">
+            </h2>
+            <p className="italic">
               The Maternal Health Foundation (MHF) has collaborated with
               computer science students at Santa Clara University to address
               maternal healthcare gaps in underserved communities. Us students
@@ -306,14 +306,103 @@ const Project = () => {
               detection, although further progress would require familiarity
               with medical knowledge beyond the scope and timeframe of our
               project.
+              <span className="inline relative">
+                {isVisible && (
+                  <span className="absolute top-[-1] right-[-1] text-white">
+                    _
+                  </span>
+                )}
+              </span>
             </p>
-            <span className="inline relative">
-              {isVisible && (
-                <span className="absolute top-[-1] right-[-1] text-white">
-                  _
-                </span>
-              )}
-            </span>
+            <h2 className="font-bold mt-4">
+              The Entirety of{" "}
+              <a
+                className="inline text-[#71c2c3]"
+                href="https://docs.google.com/presentation/d/1V34yZMW0zn5pUPTxlkLmt0i8JDlvpJ0lHR_98qogzDI/edit#slide=id.g31b98b85ded_1_61"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Our Final Presentation
+              </a>
+              ...
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4">
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_1.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_2.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_3.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_4.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_5.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_6.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_7.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_8.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_9.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_10.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_11.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_12.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_13.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_14.svg"
+                alt=""
+              />
+              <img
+                className="rounded-lg border border-gray-200 transition-transform duration-300 sm:hover:scale-105 sm:hover:shadow-2xl"
+                src="Final_Presentation_15.svg"
+                alt=""
+              />
+            </div>
           </p>
         </div>
       </div>
